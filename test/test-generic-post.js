@@ -90,8 +90,7 @@ describe("check build output for a generic post", () => {
       expect(count).to.equal(1);
     });
 
-    /*
-    // Update me. Comment in if you turned on the CSP support.
+    // Comment in if you turned on the CSP support.
     it("should have a good CSP", () => {
       const csp = select(
         "meta[http-equiv='Content-Security-Policy']",
@@ -99,7 +98,7 @@ describe("check build output for a generic post", () => {
       );
       expect(csp).to.contain(";object-src 'none';");
       expect(csp).to.match(/^default-src 'self';/);
-    });*/
+    });
 
     it("should have accessible buttons", () => {
       const buttons = doc.querySelectorAll("button");
