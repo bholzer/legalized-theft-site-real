@@ -1,11 +1,12 @@
 # Runs build and test
-name: CI
+name: Build
 
 on:
   push:
     branches: [main]
   pull_request:
     branches: [main]
+  workflow_call:
 
 jobs:
   build:
@@ -16,10 +17,14 @@ jobs:
         node-version: [18.x, 20.x]
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@main
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm install
       - run: npm run build-ci
+      - uses: actions/upload-artifact@main
+        with:
+          name: site
+          path: _site
