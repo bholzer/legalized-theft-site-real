@@ -879,7 +879,41 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
+
+header.bg-image {
+  width: 100%;
+}
+
+/* Default styles */
+header.bg-image {
+  min-height: 660px; /* Full size screen */
+}
+
+/* Tablet portrait and landscape */
+@media (max-width: 1024px) {
+  header.bg-image {
+    min-height: 500px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 767px) {
+  header.bg-image {
+    min-height: 400px;
+  }
+}
+
+/* Smaller mobile devices */
+@media (max-width: 480px) {
+  header.bg-image {
+    min-height: 300px;
+  }
+}
+
 header p {
   margin-top: 0;
 }
@@ -921,10 +955,14 @@ header nav label {
   text-align: right;
 }
 main {
-  max-width: 70rem;
+  max-width: 100%;
   margin: 0 auto;
-  border-top: 0.5px solid #ccc;
 }
+
+main h2.subheader {
+  text-align: center;
+}
+
 footer {
   background: rgba(0, 0, 0, 0.8);
   color: #fff;
