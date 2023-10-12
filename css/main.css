@@ -1,7 +1,10 @@
 /* Color customization */
 :root {
-  --primary: #f9c412;
-  --primary-dark: #e7bf60;
+  --primary: #eb0a8b;
+  --primary-dark: #070f23;
+
+  /*--primary: #f9c412;
+  --primary-dark: #e7bf60;*/
 }
 
 .test-dead-code-elimination-sentinel {
@@ -838,7 +841,7 @@ video {
 }
 body {
   font-family: var(--font-family);
-  background: #181818;
+  background: var(--primary-dark);;
   color: #eee;
 }
 section {
@@ -923,7 +926,7 @@ header nav {
   left: 0;
   width: 100vw;
   padding: 0.375em 1.5em;
-  background: hsla(0, 0%, 100%, 0.9);
+/*  background: hsla(0, 0%, 100%, 0.9);*/
   font-weight: 200;
   text-align: right;
 }
@@ -938,7 +941,7 @@ header nav a {
   font-weight: 700;
   text-decoration: none;
   font-family: var(--font-family);
-  color: #181818;
+  color: #fbfbfb;
   margin-left: 1.5em;
 }
 header nav a:first-of-type {
@@ -964,7 +967,7 @@ main h2.subheader {
 }
 
 footer {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.25);
   color: #fff;
   padding: 3em;
   text-align: center;
