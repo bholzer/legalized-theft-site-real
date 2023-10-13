@@ -200,7 +200,7 @@ addEventListener(
 );
 
 if (window.ResizeObserver && document.querySelector("header nav #nav")) {
-  var progress = document.getElementById("reading-progress");
+  var progress = document.getElementById("nav-background");
 
   var timeOfLastScroll = 0;
   var requestedAniFrame = false;
@@ -215,13 +215,14 @@ if (window.ResizeObserver && document.querySelector("header nav #nav")) {
 
   var winHeight = 1000;
   var bottom = 10000;
+  var maxScrollDistance = 100; // This is the distance at which the navbar is fully opaque
   function updateProgress() {
     requestedAniFrame = false;
     var percent = Math.min(
-      (document.scrollingElement.scrollTop / (bottom - winHeight)) * 100,
-      100
+      (document.scrollingElement.scrollTop / maxScrollDistance),
+      1.0
     );
-    progress.style.transform = `translate(-${100 - percent}vw, 0)`;
+    progress.style.opacity = percent;
     if (Date.now() - timeOfLastScroll < 3000) {
       requestAnimationFrame(updateProgress);
       requestedAniFrame = true;
