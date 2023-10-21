@@ -100,15 +100,17 @@ header aside {
   position: relative;
 }
 
-#reading-progress {
+#nav-background {
   z-index: 1;
-  background-color: var(--primary);
+  background: linear-gradient(to top, transparent, var(--primary-dark) 20%);
+  background-position: bottom, top;
+  background-repeat: no-repeat;
   width: 100vw;
+  opacity: 0;
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
-  transform: translate(-100vw, 0);
   will-change: transform;
   pointer-events: none;
 }
@@ -964,6 +966,7 @@ main {
 
 main h2.subheader {
   text-align: center;
+  padding: 0px 25px;
 }
 
 footer {
