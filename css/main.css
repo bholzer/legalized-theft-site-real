@@ -102,7 +102,7 @@ header aside {
 
 #nav-background {
   z-index: 1;
-  background: linear-gradient(to top, transparent, var(--primary-dark) 20%);
+  background: linear-gradient(to top, transparent, var(--primary-dark) 10%);
   background-position: bottom, top;
   background-repeat: no-repeat;
   width: 100vw;
