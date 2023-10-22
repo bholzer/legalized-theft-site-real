@@ -13,6 +13,7 @@ function handleError(response) {
 // Handles happy response from server
 function handleSuccess(response) {
   console.log(response)
+  window.location.href = '/contact/success';
   return response;
 }
 
