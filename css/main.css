@@ -1,7 +1,9 @@
 /* Color customization */
 :root {
-  --primary: #eb0a8b;
-  --primary-dark: #070f23;
+  --primary: #eb0a8b; /* mexixan pink */
+  --primary-dark: #070f23; /* rich black (violet) */
+  --secondary: #1768AC; /* green blue */
+  --tertiary: #E9CE2C; /* citrine */
 
   /*--primary: #f9c412;
   --primary-dark: #e7bf60;*/
@@ -792,12 +794,12 @@ input[type="submit"] {
   background: #f9c412;
   color: #181818;
 }
-button:not([disabled]):hover,
+/*button:not([disabled]):hover,
 button[type="submit"]:hover,
 input[type="submit"]:hover {
   background: #ba9005;
   color: #000;
-}
+}*/
 input[type="color"],
 input[type="date"],
 input[type="datetime-local"],
@@ -876,7 +878,7 @@ header label {
   display: none;
 }
 header {
-  padding: 4.5em 1.5em 3em;
+  padding: 4.5em 1.5em 4.5em;
   width: 37.5em;
   margin: 0 auto;
   text-align: center;
@@ -887,6 +889,11 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.page-contact header {
+  width: 100%;
+  background: rgb(0 0 0 / 0.25);
 }
 
 header.bg-image {
@@ -976,7 +983,7 @@ footer {
   text-align: center;
 }
 footer > * {
-  margin: 1.5em;
+/*  margin: 1.5em;*/
 }
 footer nav a img {
   vertical-align: middle;
@@ -1146,7 +1153,7 @@ button:not([disabled]) {
 input[type="submit"]:hover,
 button[type="submit"]:hover,
 button:not([disabled]):hover {
-  background: var(--primary-dark);
+  filter: brightness(110%);
 }
 
 dd + dt {
@@ -1165,6 +1172,29 @@ a {
   color: var(--primary);
 }
 
+.center-align {
+  text-align: center;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.right-align {
+  text-align: right;
+}
+
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary);
+}
+
+#contact-form > div {
+  margin: 0;
+}
+
+#contact-form input,
+#contact-form textarea,
+#contact-form #contact-submit {
+  width: 100%;
+  margin: 0 0 1em 0;
 }

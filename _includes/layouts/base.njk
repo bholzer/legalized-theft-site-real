@@ -45,9 +45,13 @@
 
     <link rel="preconnect" href="/" crossorigin>
     <link rel="preload" href="/fonts/Inter-3.19.var.woff2" as="font" type="font/woff2" crossorigin>
-    <script async defer src="{{ "/js/min.js" | addHash }}"
-      {% if webvitals %}data-cwv-src="{{ "/js/web-vitals.js" | addHash }}"{% endif %}>
-    </script>
+
+    {% if webvitals %}
+      {% rollupAsyncDefer "js/web-vitals.js" | url %}
+    {% endif %}
+
+    {% rollupAsyncDefer "src/main.js" | url %}
+
     {% if googleanalytics %}
       <script async defer src="{{ "/js/cached.js" | addHash }}"></script>
     {% endif %}
@@ -104,7 +108,7 @@
     </main>
 
     <footer>
-      A project by<a href="/about/">{{ metadata.author.name }}</a>
+      {% include ("footers/base.njk" if not footer else footer) %}
     </footer>
 
     <!-- Current page: {{ page.url | url }} -->

@@ -58,6 +58,8 @@ const markdownItAnchor = require("markdown-it-anchor");
 const localImages = require("./third_party/eleventy-plugin-local-images/.eleventy.js");
 const CleanCSS = require("clean-css");
 const GA_ID = require("./_data/metadata.json").googleAnalyticsId;
+const rollupPlugin = require('eleventy-plugin-rollup');
+const terser = require('@rollup/plugin-terser');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -97,6 +99,33 @@ module.exports = function (eleventyConfig) {
         });
     }
   );
+
+  eleventyConfig.addPlugin(rollupPlugin, {
+    shortcode: 'rollupAsyncDefer',
+    scriptGenerator: (file, eleventyInstance) => `<script async defer src="${file}" type="module"></script>`,
+    rollupOptions: {
+      output: {
+        format: 'es',
+        dir: '_site/js',
+      },
+      plugins: [
+        terser(),
+      ],
+    },
+  });
+
+
+  eleventyConfig.addPlugin(rollupPlugin, {
+    rollupOptions: {
+      output: {
+        format: 'es',
+        dir: '_site/js',
+      },
+      plugins: [
+        terser(),
+      ],
+    },
+  });
 
   async function lastModifiedDate(filename) {
     try {
@@ -185,6 +214,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./js/");
   // We need to rebuild on CSS change to inline it.
   eleventyConfig.addWatchTarget("./css/");
+    eleventyConfig.addWatchTarget('./src/');
   // Unfortunately this means .eleventyignore needs to be maintained redundantly.
   // But without this the JS build artefacts doesn't trigger a build.
   eleventyConfig.setUseGitIgnore(false);
