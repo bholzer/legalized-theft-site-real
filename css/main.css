@@ -276,6 +276,9 @@ html {
 }
 body {
   margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 h1 {
   font-size: 2em;
@@ -981,6 +984,7 @@ footer {
   color: #fff;
   padding: 3em;
   text-align: center;
+  margin-top: auto;
 }
 footer > * {
 /*  margin: 1.5em;*/
@@ -1197,4 +1201,8 @@ a {
 #contact-form #contact-submit {
   width: 100%;
   margin: 0 0 1em 0;
+}
+
+.page-success .header-success {
+  border-bottom: 1px #fefefe;
 }

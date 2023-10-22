@@ -29,5 +29,8 @@ function submitForm(event) {
     body: JSON.stringify(formProps)
   }).then(handleError)
     .then(handleSuccess)
+    .catch((error) => {
+      console.log(error)
+    })
   console.log(formProps)
 }
