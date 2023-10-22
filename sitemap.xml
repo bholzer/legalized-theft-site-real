@@ -11,7 +11,7 @@
   
   <url>
     <loc>https://legalizedtheft.org/posts/firstpost/</loc>
-    <lastmod>2023-10-21T22:04:25.000Z</lastmod>
+    <lastmod>2023-10-22T21:56:13.000Z</lastmod>
   </url>
   
   
@@ -24,7 +24,7 @@
   
   <url>
     <loc>https://legalizedtheft.org/posts/secondpost/</loc>
-    <lastmod>2023-10-21T22:04:25.000Z</lastmod>
+    <lastmod>2023-10-22T21:56:13.000Z</lastmod>
   </url>
   
   
@@ -37,7 +37,7 @@
   
   <url>
     <loc>https://legalizedtheft.org/posts/thirdpost/</loc>
-    <lastmod>2023-10-21T22:04:25.000Z</lastmod>
+    <lastmod>2023-10-22T21:56:13.000Z</lastmod>
   </url>
   
   
@@ -50,7 +50,7 @@
   
   <url>
     <loc>https://legalizedtheft.org/posts/fourthpost/</loc>
-    <lastmod>2023-10-21T22:04:25.000Z</lastmod>
+    <lastmod>2023-10-22T21:56:13.000Z</lastmod>
   </url>
   
   
@@ -63,7 +63,7 @@
   
   <url>
     <loc>https://legalizedtheft.org/about/</loc>
-    <lastmod>2023-10-21T22:04:35.221Z</lastmod>
+    <lastmod>2023-10-22T21:56:31.067Z</lastmod>
   </url>
   
   
@@ -76,7 +76,20 @@
   
   <url>
     <loc>https://legalizedtheft.org/posts/</loc>
-    <lastmod>2023-10-21T22:04:35.221Z</lastmod>
+    <lastmod>2023-10-22T21:56:31.067Z</lastmod>
+  </url>
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <url>
+    <loc>https://legalizedtheft.org/contact/</loc>
+    <lastmod>2023-10-22T21:56:31.067Z</lastmod>
   </url>
   
   
@@ -89,7 +102,7 @@
   
   <url>
     <loc>https://legalizedtheft.org/</loc>
-    <lastmod>2023-10-21T22:04:35.245Z</lastmod>
+    <lastmod>2023-10-22T21:56:31.091Z</lastmod>
   </url>
   
   
@@ -101,8 +114,8 @@
   
   
   <url>
-    <loc>https://legalizedtheft.org/index_njk/</loc>
-    <lastmod>2023-10-21T22:04:35.245Z</lastmod>
+    <loc>https://legalizedtheft.org/index_md/</loc>
+    <lastmod>2023-10-22T21:56:31.091Z</lastmod>
   </url>
   
   
@@ -115,7 +128,7 @@
   
   <url>
     <loc>https://legalizedtheft.org/page-list/</loc>
-    <lastmod>2023-10-21T22:04:35.249Z</lastmod>
+    <lastmod>2023-10-22T21:56:31.095Z</lastmod>
   </url>
   
   
@@ -128,7 +141,7 @@
   
   <url>
     <loc>https://legalizedtheft.org/tags/</loc>
-    <lastmod>2023-10-21T22:04:35.249Z</lastmod>
+    <lastmod>2023-10-22T21:56:31.095Z</lastmod>
   </url>
   
   
@@ -141,7 +154,7 @@
   
   <url>
     <loc>https://legalizedtheft.org/tags/another-tag/</loc>
-    <lastmod>2023-10-21T22:04:35.249Z</lastmod>
+    <lastmod>2023-10-22T21:56:31.095Z</lastmod>
   </url>
   
   
@@ -154,7 +167,7 @@
   
   <url>
     <loc>https://legalizedtheft.org/tags/second-tag/</loc>
-    <lastmod>2023-10-21T22:04:35.249Z</lastmod>
+    <lastmod>2023-10-22T21:56:31.095Z</lastmod>
   </url>
   
   
@@ -167,6 +180,6 @@
   
   <url>
     <loc>https://legalizedtheft.org/tags/number-2/</loc>
-    <lastmod>2023-10-21T22:04:35.249Z</lastmod>
+    <lastmod>2023-10-22T21:56:31.095Z</lastmod>
   </url>
 </urlset>
